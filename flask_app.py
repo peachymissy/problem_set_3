@@ -11,11 +11,8 @@ def chart():
         'Authorization': 'Bearer keyMdNcOcmTFobuDZ',
     }
 
-    params = (
-        ('view', 'Grid view'),
-    )
 
-    r = requests.get('https://api.airtable.com/v0/appAmdfpYQu9wNQdc/Imported%20table?api_key=keyMdNcOcmTFobuDZ', headers=headers, params=params)
+    r = requests.get('https://api.airtable.com/v0/appAmdfpYQu9wNQdc/Imported%20table?api_key=keyMdNcOcmTFobuDZ')
     dict1 = r.json()
     dict2 = {}
     dataset = []
